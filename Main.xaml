@@ -111,19 +111,19 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="892.0000000000001,3194.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="892.0000000000001,3420" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="635.2,3171.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b2036113-bc8b-4b42-ae9e-ac2a4fd217b1" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="635.2,3396.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b2036113-bc8b-4b42-ae9e-ac2a4fd217b1" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601.6,2931.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601.6,3156.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="selectedCandidateName" />
               <Variable x:TypeArguments="x:String" Name="emp_Name" />
@@ -272,7 +272,7 @@
             </uix:NClick>
             <ui:BuildDataTable DataTable="[dt_EmployeeData]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="568,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Phone_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Birthdate&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
             <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{emp_Name, emp_PhoneNo, emp_BirthDate, emp_Email}]" DataTable="[dt_EmployeeData]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="568,220" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
-            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="568,707.2" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="568,714.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
               <ueab:ExcelProcessScopeX.Body>
                 <ActivityAction x:TypeArguments="ui:IExcelProcess">
                   <ActivityAction.Argument>
@@ -311,6 +311,21 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ueab:ExcelProcessScopeX>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Refresh'" sap:VirtualizedContainerService.HintSize="568,218.4" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b2036113-bc8b-4b42-ae9e-ac2a4fd217b1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/employees" CVScreenId="22ad6377-c2c9-4683-8f69-317596b01a89" ContentHash="_ifgzZ8c5kiHGOdYndeSVg" CvElementArea="939, 904, 129, 53" CvTextArea="971, 921, 63, 17" CvTextArgument="Refresh" CvType="Button" DesignTimeRectangle="941, 905, 125, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='buttonRefres' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='buttonRefres' tag='BUTTON' type='button' class='skewBtn blue' aaname='Refresh' check:innerText='Refresh' /&gt;" Guid="bfcc7ffc-b4f0-4d8d-88e8-e91bfb76ccce" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIEAAAA2CAYAAADgb/qdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATrSURBVHhe7ZxNaxtXFIb7N7QTFLRTd15p51137ip045WWXhfbGFmuMaYEDaUgUuSgRV1arBCUYoopwYlb0tLFQIssafRRSRlkWYmj+i+8PWdmrnSljiRbTdHXWTzguXPnQ3OeuefMeLgf3N7eQlhuRAJBJBCGSJD+uYlPkmV8uHOJwGc5Yc7hOHI8Oa5+8e6ToH3zNz5NVXx3JCwGHF+Osx73PgmUAB99XsDRyybqrU5fZ2E+4ThyPDmuSgR9fVcCHiqUAH/Wbvo6CYsBx1WJoKeGrgScM3glG6PahMWD48tx5nirtq4EqgiUFLDYcHw5zhxv1daVgFcwallYXAZjLRIsISKBIBIIIoFAiASCSCCIBAIhEggigSASCIRIIMyyBA1EvXPwI7hbQPTUht3x23YMnSaOknkEN919RZ78//8pzWXzdKw8jLL/+mmirqlanj0JEmVkLur9/FjGg0P3/ELf2D7bjuHCcrZdeVx19ndmvfXv9x4RCSbCkyDV8FlH0N186IhQxPG1z/oRTCMgIsFEjJGAMJ/6XNibK2TSBYS23fMPxLy04ay/guGNID0sPPOOFXlah2G47cGDCn51tunANitY3/f6UwpZMUrI1PTvLDqo0OiyutvrE35oIVN91+2jJDg0XyNu8N/evpIVvGip/UwH9zrMpQRvcZzkcyziyPbarhvY4EBs5xHN1mior8FIuRc8RPuxaRvz9zqSX/MHM5ckB6cXGxV1LApK6Msyji+qiJ+5aSZ36n5+FU6UkHRSUQkf8zE2CzAsV4T2KwtB6rPyVbnXJ8Z9rO4o5UrgHiOSqtAx6DzSXtujOtrOb5oOzjkQank+JHjTwlm2iBCvT9a8u5xGhhO6qJskRbP/ayj7vEi/JY943l3+99DsHWuvhBd6oXldxzrfrd/Z/UHq2IjzyOAF71mK/qaRw9T7/FFCePsSG7+432cqCVa+12sYEvkRbUujUWaSAvc9MfsSjCCcrMK8Uf2pRjig9gMLR3w36pxaCFP/SPbK6TtUgkHhvALywZOB/RFbCT4HTiWefDSyrJ00YLZ6KUCnmw4s//Zp1grqeqrl2ZNAfzpQQ3GsiGR+sKIfL03gsRvku0qg7t7hUEqoUt/Wa2zptUYsj7VvqzjzqQkGgy0SjGTI3dmidiff9nLyyP4+3E+Cuwaog7ZlI3miFYhcd7x646wXCSZiRFCtClYpVwdiNBx3K2vK03vUtlf2qvrh3FWCtlNLUDo4v/97hHajhugO7dP4iwpPkWBCRt3ZHZhZt2oP0RCvijaVm6MX7t2nsCm389vB9fNhd+WQY3mFYeCQij69cFPvKPb5MbIJI0FPG4mqE+xeHxtbLKVI8F8YJQHRfVlEFfhv3p2qUgVtF0nz20B6REwXEOZAftEL5J0l0GQL7BYRf851iXpbqQ31P6jHSAsG93lewcZD9zFUnZtIMBFjJGAoLUS4T0x7tGtRXk5pL4t2LrGariPXfYq4jwQMvwgqYU29LCJC9ARimG2tzzuYP+m1QA7B/f4+IoEw04gEgkggiAQCIRIIIoEgEgiESCCIBIJIIBAigSASCCKBQAyVQKawWw5GTmEnk1kuByMns5RpbRefsdPaMjLB9WLCceR4KgGGTnDNyFT3iw/Hd+RU9woeKjhnqGJRmG84jhxPPQXo+EogLBO3+AeDA9BzfCiMgAAAAABJRU5ErkJggg==" InformativeScreenshot="bfd9f5bc47972bff793cda01b961c7d7.png" Reference="IJ3uRd-kDU-5YPVirnW39w/grUbBscomEWG3Bq8W_sYOA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Employees' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
